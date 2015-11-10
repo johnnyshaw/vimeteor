@@ -15,7 +15,7 @@ var postsData = [
         url: 'http://www.tencent.com'
     }
 ];
-Template.postList.helpers({
+Template.postsList.helpers({
     posts: function(){
         return Posts.find({author:'johnny',category:'JavaScript'});
     }
