@@ -16,5 +16,7 @@ var postsData = [
     }
 ];
 Template.postList.helpers({
-    posts: postsData
+    posts: function(){
+        return Posts.find();
+    }
 });
