@@ -17,6 +17,6 @@ var postsData = [
 ];
 Template.postsList.helpers({
     posts: function(){
-        return Posts.find({author:'johnny',category:'JavaScript'});
+        return Posts.find();
     }
 });
